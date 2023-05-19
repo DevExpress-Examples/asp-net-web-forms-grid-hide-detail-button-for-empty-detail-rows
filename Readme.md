@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # ASPxGridView - How to hide the detail button if the detail grid is empty
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e2537/)**
+**[[Run Online]](https://codecentral.devexpress.com/128534443/)**
 <!-- run online end -->
 
 
