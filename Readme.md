@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to hide the detail button when the detail grid is empty
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128534443/)**
-<!-- run online end -->
 
 This example demonstrates how to handle the grid's `DetailRowGetButtonVisibility` event to hide the detail button for empty detail rows.
 
