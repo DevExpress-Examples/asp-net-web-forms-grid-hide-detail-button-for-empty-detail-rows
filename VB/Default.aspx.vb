@@ -20,7 +20,7 @@ Partial Public Class _Default
 		Dim selectResult As New DataView()
 		Dim selectCommand As String = "select distinct [CategoryID] from [Products]"
 		Using ds As New AccessDataSource(connectionString, selectCommand)
-			selectResult = CType(ds.Select(DataSourceSelectArguments.Empty), DataView)
+			selectResult = DirectCast(ds.Select(DataSourceSelectArguments.Empty), DataView)
 		End Using
 		Dim result As New ArrayList()
 		For Each row As DataRow In selectResult.Table.Rows
@@ -29,7 +29,7 @@ Partial Public Class _Default
 		Session("SelectResult") = result
 	End Sub
 	Protected Sub masterGrid_DetailRowGetButtonVisibility(ByVal sender As Object, ByVal e As ASPxGridViewDetailRowButtonEventArgs)
-		If Not CType(Session("SelectResult"), ArrayList).Contains(e.KeyValue) Then
+		If Not DirectCast(Session("SelectResult"), ArrayList).Contains(e.KeyValue) Then
 			e.ButtonState = GridViewDetailRowButtonState.Hidden
 		End If
 	End Sub
